@@ -3,8 +3,8 @@ import React from 'react';
 import TopMenuBar from '../TopMenuBar/TopMenuBar';
 import DashColumn from '../DashColumn/DashColumn';
 import Card from '../Card/Card';
-import TextInput from '../TextInput/TextInput';
-import Button from '../Button/Button';
+import TextInput from '../form-elements/TextInput/TextInput';
+import Button from '../form-elements/Button/Button';
 
 class PlanrAppContainer extends React.Component {
 
