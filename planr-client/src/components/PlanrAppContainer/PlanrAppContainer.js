@@ -9,11 +9,11 @@ import Button from '../form-elements/Button/Button';
 class PlanrAppContainer extends React.Component {
 
     render() {
-        return <div className="PlanrAppContainer w-screen h-screen bg-gray-200">
+        return <div className="PlanrAppContainer w-100 h-screen bg-gray-200 overflow-x-hidden">
             <TopMenuBar />
-            <div className="PlanrDashContainer w-screen p-6 flex flex-row content-stretch flex-wrap">
-                <DashColumn >
-                    <Card title="Test">
+            <div className="PlanrDashContainer w-screen p-6 flex flex-row  flex-wrap">
+                <DashColumn title="Column 1">
+                    <Card title="Section A">
                         <ul className="list-disc list-inside">
                             <li>El 1</li>
                             <li>El 2</li>
@@ -22,17 +22,23 @@ class PlanrAppContainer extends React.Component {
                             <li>El 5</li>
                         </ul>
                     </Card>
-                    <Card title="Test 2">
+                    <Card title="Section B">
                         <TextInput></TextInput>
                         <Button></Button>
                     </Card>
                 </DashColumn>
-                <DashColumn>
-                    <Card title="Test">
-                        Hello
+                <DashColumn title="Column 2">
+                    <Card title="Section A">
+                        <div className="overflow-hidden truncate min-w-0 w-min break-all">
+                            Hello world!
+                        </div>
                     </Card>
                 </DashColumn>
-                <DashColumn />
+                <DashColumn title="Column 3">
+                    <Card title="Section A">
+                        Hello world!
+                    </Card>
+                </DashColumn>
             </div>
         </div>
     }
