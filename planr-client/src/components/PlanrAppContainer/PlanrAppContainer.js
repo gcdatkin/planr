@@ -23,8 +23,9 @@ class PlanrAppContainer extends React.Component {
                         </ul>
                     </Card>
                     <Card title="Section B">
-                        <TextInput></TextInput>
-                        <Button></Button>
+                        <TextInput label="Form Input A"></TextInput>
+                        <TextInput label="Form Input B"></TextInput>
+                        <Button value="Submit"></Button>
                     </Card>
                 </DashColumn>
                 <DashColumn title="Column 2">
