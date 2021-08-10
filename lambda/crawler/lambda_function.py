@@ -9,14 +9,14 @@ from helper_functions import *
 def lambda_handler(event, context):
     
     # Important information
-    AWS_ACCESS_KEY_ID = 'AKIAY3I43SR6HLJPH55C'
-    AWS_SECRET_ACCESS_KEY = '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'
+    AWS_ACCESS_KEY_ID = 'AKIAT2U3KSJOEV3AYSGB'
+    AWS_SECRET_ACCESS_KEY = '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'
 
     SPOTIFY_CLIENT_ID = '184eaab7c86845eeaa6f779f47d37ce0'
     SPOTIFY_CLIENT_SECRET = 'c9c02ad8cfa941c78eb99e03faeb5458'
     SPOTIFY_ACCESS_TOKEN = get_access_token(client_id=SPOTIFY_CLIENT_ID, client_secret=SPOTIFY_CLIENT_SECRET)
     
-    EXCLUDED_LABELS_BUCKET = 'planr744'
+    EXCLUDED_LABELS_BUCKET = 'planr749'
     EXCLUDED_LABELS_FILE = 'excluded_labels.txt'
 
     # AWS Session
